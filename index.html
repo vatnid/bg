@@ -5,11 +5,13 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <title>Bulgarian Romanization Converter</title>
+    <title>Converters Galore</title>
   </head>
   <body>
+    <!-- Insert scripts -->
     <script src="jquery.js"></script>
-    <script src="romanizeBG.js"></script>
+    <script src="romaniseBG.js"></script>
+    <script src="runes.js"></script>
     <script type="text/javascript">
       var stress = "";
 
@@ -17,9 +19,11 @@
         var source = document.getElementById("input").value;
         var target = document.getElementById("output").value;
 
-        // Bulgarian Cyrillic → Latin
-        if (document.getElementById("romanizebg").selected == true) {
-          document.getElementById("output").value = romanizeBG(source);
+        // Bulgarian Cyrillic --> Latin
+        if (document.getElementById("romanisebg").selected == true) {
+          document.getElementById("output").value = romaniseBG(source);
+        } else if (document.getElementById("runes").selected == true) {
+          document.getElementById("output").value = runes(source);
         } else if (document.getElementById("debug").selected == true) {
           alert("1");
           document.getElementById("output").value = bulgarianStress("слънце");
@@ -30,15 +34,16 @@
     </script>
     <br>
     <div class="title">
-      <span>🇧🇬 Bulgarian Romanization Converter 🇧🇬</span>
+      <span>Converters Galore</span>
     </div><br>
     <div class="content">
       <div class="inputarea">
-        <span class="instruction">Input Cyrillic here:</span><br>
+        <span class="instruction">Input source here:</span><br>
         <textarea id="input" cols="50" rows="15"></textarea><br>
         <select>
-          <option id="romanizebg" value="romanizebg" selected="selected">Български → Bălgarski</option>
-          <option id="debug" value="debug">Debug mode</option>
+          <option id="romanisebg" value="romanisebg" selected="selected">Български → Bălgarski</option>
+          <option id="romanisebg" value="runes" selected="selected">ᚱᚢᚾᛉ → roonz</option>
+          <!-- <option id="debug" value="debug">Debug mode</option> -->
         </select>
         <input type="submit" value="Submit" onclick="return convert();" />
       </div>
