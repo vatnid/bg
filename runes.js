@@ -10,9 +10,9 @@ function runes(input) {
 
   for (i = 0; i < input.length; i++) {
     var assigned = false;
-    for (j = 0; j < alphabet.length; j++) {
+    for (j = 0; j < runes.length; j++) {
       if (!assigned) {
-        if (input[i] == alphabet[j]) { // if the letter matches one in the alphabet
+        if (input[i] == runes[j]) { // if the letter matches one in the alphabet
           output += latin[j];
           assigned = true;
         }
