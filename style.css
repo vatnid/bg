@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+body {
+  background-color: #383838;
+  color: white;
+}
+
 .title {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: bold;
   font-size: xx-large;
@@ -9,7 +16,34 @@
   position: fixed;
   left: 50%;
   transform: translate(-50%);
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+  padding: 5px;
+  margin-top:  10px;
+  background-color: #4d4d4d;
+  border-color: #1c1c1c;
+  color: white;
+  font-size: 14px;
+}
+
+#submitbtn {
+  background-color: #1c1c1c;
+  border: none;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#submitbtn:hover {
+  background-color: #2e2e2e;
+}
+
+#submitbtn:active {
+  background-color: #141414;
 }
 
 .instruction {
@@ -23,3 +57,4 @@
 .hiddenarea {
   display: none;
 }
+

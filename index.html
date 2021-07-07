@@ -40,12 +40,14 @@
       <div class="inputarea">
         <span class="instruction">Input source here:</span><br>
         <textarea id="input" cols="50" rows="15"></textarea><br>
+
         <select>
           <option id="romanisebg" value="romanisebg" selected="selected">Български → Bălgarski</option>
           <option id="runes" value="runes">ᚱᚢᚾᛉ → roonz</option>
           <!-- <option id="debug" value="debug">Debug mode</option> -->
         </select>
-        <input type="submit" value="Submit" onclick="return convert();" />
+
+        <input id="submitbtn" type="submit" value="Submit" onclick="return convert();" />
       </div>
       <br>
       <div class="outputarea">
