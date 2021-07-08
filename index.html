@@ -22,8 +22,10 @@
         // Bulgarian Cyrillic --> Latin
         if (document.getElementById("romanisebg").selected == true) {
           document.getElementById("output").value = romaniseBG(source);
-        } else if (document.getElementById("runes").selected == true) {
-          document.getElementById("output").value = runes(source);
+        } else if (document.getElementById("rune2latin").selected == true) {
+          document.getElementById("output").value = rune2latin(source);
+        } else if (document.getElementById("trans2rune").selected == true) {
+          document.getElementById("output").value = trans2rune(source);
         } else if (document.getElementById("debug").selected == true) {
           alert("1");
           document.getElementById("output").value = bulgarianStress("слънце");
@@ -43,7 +45,8 @@
 
         <select>
           <option id="romanisebg" value="romanisebg" selected="selected">Български → Bălgarski</option>
-          <option id="runes" value="runes">ᚱᚢᚾᛉ → roonz</option>
+          <option id="rune2latin" value="runes">ᚱᚢᚾᛉ → roonz</option>
+          <option id="trans2rune" value="runes">rq̇nz → ᚱᚢᚾᛉ</option>
           <!-- <option id="debug" value="debug">Debug mode</option> -->
         </select>
 
