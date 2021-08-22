@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 body {
   background-color: #383838;
@@ -16,7 +18,7 @@ body {
   position: fixed;
   left: 50%;
   transform: translate(-50%);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 textarea {
